@@ -1,0 +1,289 @@
+html {
+    font-size: 62,5%;
+}
+    
+body {
+    margin: 0;
+    background-color: #F8F4EF;
+    font-family: Karma, seref;  
+}
+    
+.wrapper {
+     max-width: 1200px;
+    margin: 0 auto;
+}
+    
+/* Navigation bar*/
+    
+nav {
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    z-index: 10;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+nav{
+    background-color: rgba(248, 248, 232, 0.24);
+}
+
+.logo{
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.nav_list{
+    margin-top: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10em;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0A3641;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+nav svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #012340;
+    display: right;
+}
+
+.one{
+    margin: 10px 0 0 -160px;
+}
+
+.one{
+    width: 6.04px; 
+    height: 23px; 
+    left: 1312px; 
+    top: 13px; 
+    position: absolute; 
+    text-align: center; 
+    color: #0A3641; 
+    font-size: 14px; 
+    font-weight: 700; 
+    word-wrap: break-word"
+}
+    
+/* Main */
+    
+.container{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10rem;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: auto;
+}
+
+.container{
+    background: rgba(227, 177, 132, 0.75);
+}
+
+.left-col{
+    float: left;
+    width: 50%;
+    margin-left: 30px;
+    color: #0A3641;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input.short, .long{
+    border-radius: 4px;
+    background: rgba(255, 244, 229, 0.88);
+    margin-bottom: 10px;
+}
+
+.short{
+    width: 220px;
+    height: 15px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.long{
+    width: 470px;
+    height: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+.buttons{
+    display: inline;
+}
+
+.buttons a{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+#return{
+    color: #0A3641;
+    font-family: Karma;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+button{
+    background-color: #F2F2F2;
+    color: #0A3641;
+    padding: 10px 20px;
+    border: 3px solid #A69A5D;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button{
+    margin-right: 30px;
+    padding: auto;
+}
+
+.right-col{
+    border-left: 1px solid rgba(3, 76, 140, 0.37);
+    padding-left: 120px;
+    text-align: center;
+    color: #0A3641;
+    font-family: Karma;
+    font-size: 16px;
+}
+
+.order{
+    color: #0A3641;
+    font-family: Karma;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.promo-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+      
+.promo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+      
+.promo-input input[type="text"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 4px solid rgba(3, 76, 140, 0.37);
+    background: #F8F4EF;
+}
+
+.promo-input button{
+    background-color: #F2F2F2;
+    color: #0A3641;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.total_price{
+    display: flex;
+}
+
+.total{
+    float: left;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.price{
+    float: right;
+    margin-top: 20px;
+}
+
+/* Footer*/
+    
+footer{
+    padding: 10px 10px 10px 10px;
+    height: max-content;
+}
+
+hr{
+    color: #06272F;
+}
+
+footer{
+    display: flex;
+    gap: 10px;
+}
+
+.subscription, .help, .product-info, .social-media{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.subscription{
+    color: #0A3641;
+    text-align: center;
+    font-size: 0,5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form{
+    color: #0A3641;
+}
+
+
+.help{
+    color: #0A3641;
+    text-align: center;
+    font-size: 0,5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+strong{
+    font-size: 0,6rem;
+    text-decoration: underline;
+    color: #0A3641;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: #0A3641;
+}
+
+.social-media svg{
+    align-items: center;
+    margin-left: 20px;
+}

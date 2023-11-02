@@ -1,0 +1,301 @@
+html {
+font-size: 62,5%;
+}
+
+body {
+    margin: 0;
+    background-color: #F8F4EF;
+    font-family: Karma, seref;  
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation bar*/
+
+nav {
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    z-index: 10;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+nav{
+    background-color: rgba(248, 248, 232, 0.24);
+}
+
+.logo{
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.nav_list{
+    margin-top: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10em;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0A3641;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+nav svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #012340;
+    display: right;
+}
+
+/* Main */
+
+.bestsellers {
+display: flex;
+margin-top: 10em;
+gap: 1em;
+} 
+
+.bestsellers {
+    color: #0A3641;
+    font-size: 0,5rem;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+.left-col{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.left-col,.right-col svg {
+    fill: #0A3641;
+}
+
+.right-col{
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.sale-container {
+    background-color: #034C8C5E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 9px;
+}
+
+.right-text p {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.big-sale-text h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #000;
+}
+
+.sale-button {
+    background-color: #F2F2F2;
+    color: #012340;
+    border: 3px solid #A69A5D;
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 210px;
+    height: 55px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.image {
+    width: 250px;
+    height: 210px;
+    position: relative;
+}
+
+#image1 {
+    background-image: url('/images/texture.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 502px;
+    height: 436px;
+}
+
+#image2 {
+    background-image: url('/images/pocket_photo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 502px;
+    height: 436px;
+}
+
+.text-bottom, .text-top {
+    position: absolute;
+    width: 100%;
+    color: #F8F4EF;
+    font-family: Karma;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.text-bottom {
+    bottom: 0;
+}
+
+.text-top {
+    top: 0;
+}
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+}
+
+.might-like-images {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: rgba(166, 154, 93, 0.24);
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    float: left;
+}
+
+.might-like-images {
+    color: #0A3641;
+    font-family: Karma;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.might-like-images a {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+
+/* Footer*/
+
+footer{
+    padding: 10px 10px 10px 10px;
+    height: max-content;
+}
+
+hr{
+    color: #06272F;
+}
+
+footer{
+    display: flex;
+    gap: 10px;
+}
+
+.subscription, .help, .product-info, .social-media{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.subscription{
+    color: #0A3641;
+    text-align: center;
+    font-size: 0,5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form{
+    color: #0A3641;
+}
+
+
+.help{
+    color: #0A3641;
+    text-align: center;
+    font-size: 0,5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+strong{
+    font-size: 0,6rem;
+    text-decoration: underline;
+    color: #0A3641;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: #0A3641;
+}
+
+.social-media svg{
+    align-items: center;
+    margin-left: 20px;
+}
