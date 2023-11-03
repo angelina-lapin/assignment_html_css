@@ -161,7 +161,7 @@ gap: 1em;
 }
 
 #image1 {
-    background-image: url('https://angelina.lapin.io/images/texture.jpeg');
+    background-image: url('https://angelina.lapin.io/html-css/images/texture.jpeg');
     background-size: cover;
     background-position: center;
     width: 502px;
@@ -169,7 +169,7 @@ gap: 1em;
 }
 
 #image2 {
-    background-image: url('https://angelina.lapin.io/images/pocket_photo.jpg');
+    background-image: url('https://angelina.lapin.io/html-css/images/pocket_photo.jpg');
     background-size: cover;
     background-position: center;
     width: 502px;
