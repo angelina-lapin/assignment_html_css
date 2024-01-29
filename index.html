@@ -4,13 +4,20 @@
         <title>Home page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Waterproof jackets for men and women" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-api.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./js/script.js" defer></script>
+
     </head>
     <body>
-        <div class="wrapper">
+        
         <header>         
             <nav> 
                 <ul>
@@ -29,41 +36,9 @@
         <div class="bestsellers">
             <div class="col">
                 <h1>Bestsellers for men</h1>
-                <div class="image-group">
-                    <div class="image-item">
-                        <a href="jack.html"><img src="images/green_coat.jpg" alt="Green coat"> </a>
-                        <p>Green coat</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src="images/shiny_coat.webp" alt="Shiny coat"></a>
-                        <p>
-                            Shiny coat
-                        </p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src="images/darkblue_coat.jpg" alt="Dark blue coat"></a>
-                        <p>Dark blue coat</p>
-                    </div>
-                </div>
-                
             </div>
             <div class="col">
-                <h1>Bestsellers for women</h1>
-                <div class="image-group">
-                    <div class="image-item">
-                        <a href="jack.html"><img src="images/white_coat.jpg" alt="White coat"> </a>
-                        <p>White coat</p>
-                    </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src="images/green_coat.jpg" alt="Grey coat"></a>
-                    <p>Grey coat</p>
-                </div> 
-                <div class="image-item">
-                    <a href="jack.html"><img src="images/orange.webp" alt="Orange coat"></a>
-                    <p>Orange coat</p>
-                </div>   
-                </div>
-                
+                <h1>Bestsellers for women</h1>   
             </div>
         </div>
 
@@ -109,11 +84,11 @@
                         <p>Blue coat</p>
                 </div>
                 <div class="image-item">
-                    <a href="jack.html"><img src ="images/black_long.webp"alt="blue coat"></a>
+                    <a href="jack.html"><img src ="images/black_long.webp" alt="blue coat"></a>
                     <p>Black coat</p>
                 </div>
                 <div class="image-item">
-                    <a href="jack.html"><img src ="images/green_coat.jpg"alt="green coat"></a>
+                    <a href="jack.html"><img src ="images/green_coat.jpg" alt="green coat"></a>
                     <p>Green coat</p>
                 </div>
                 <div class="image-item">
@@ -121,23 +96,26 @@
                     <p>Dark blue coat</p>
                 </div>
                 <div class="image-item">
-                    <a href="jack.html"><img src ="images/stripe_coat.jpg"alt="stripe coat"></a>
+                    <a href="jack.html"><img src ="images/stripe_coat.jpg" alt="stripe coat"></a>
                     <p>Stripe coat</p>
                 </div>
             </div>
    
         </div>
             
-        </div>
 
     </main>
         <hr>
     <footer>
         <div class="subscription">
             <h4>Don't miss our offers and product launches</h4r>
-            <p>Subscribe to our newsletter </p>
+            <ul>
+                <li>
+                    Subscribe to our newsletter
+                </li>
+            </ul>
             <form action="send" method="get">
-                <input type="email" placeholder="E-mail adress" required>
+                <input type="email" placeholder="E-mail address" required>
                 <input type="submit" value="Subscribe">
             </form>
         </div>
@@ -187,6 +165,7 @@
             </a>
         </div>
     </footer> 
-        </div>
+        
+        
     </body>
 </html>

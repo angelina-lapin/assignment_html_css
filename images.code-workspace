@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "assignment_html_css-1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "assignment_html_css-1",
+		"liveServer.settings.port": 5501
+	}
+}
