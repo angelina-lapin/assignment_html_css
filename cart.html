@@ -9,13 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cart_style.css">
+        <script src="/js/jack.js"></script>
+        <!-- <script src="/js/buttons.js"></script> -->
     </head>
     <body>
-        <div class="wrapper">
+       
             <header>         
                 <nav> 
                     <ul>
-                        <li><a href="index.html"><img src="images/RainyDays_Logo.png" width="113" height="68" alt="RainyDays Logo"></a></li>
+                        <li><a href="index.html"><img src="images/RainyDays_Logo.png" id="logo" alt="RainyDays Logo"></a></li>
                         <li><a href="list.html">Men</a></li>
                         <li><a href="list.html">Women</a></li>
                         <li><a href="#">Search</a></li>
@@ -27,36 +29,8 @@
                 </nav>
             </header>
     <main>
-        <div class="cart">
-            <div class="photo">
-                <img src="images/orange.webp" alt="coat photo">
-            </div>
-            <div class="details">
-                <h1>Men's lite waterproof jacket</h1>
-                <p>Size S</p>
-                    <div class="promo-container">
-                        <div class="promo-input">
-                            <input type="text" placeholder="Enter Promo Code">
-                            <button class="apply-button">Apply</button>
-                        </div>
-                    </div>
-                    <div class="total_price">
-                        <div class="total">
-                            <p>Subtotal</p>
-                            <p>TOTAL</p>
-                        </div>
-                        <div class="price">
-                            <p>kr 1300</p>
-                            <p>kr 1300</p>
-                        </div>         
-                    </div>
-                    <div class="buttons">
-                        <a href="list.html">Continue shopping</a>
-                        <a href="contact_info.html"><button>Checkout</button></a>
-                    </div>
-            </div>
-        </div>
-        <div class="might-like-images">
+        <div class="cart-items-container"></div>
+        <!-- <div class="might-like-images">
             <h1>You might also like</h1>
             <div class="image-group">
                 <div class="image-item">
@@ -81,7 +55,7 @@
                 </div>
             </div>
    
-        </div>
+        </div> -->
         <div class="sale-container">
             <h2>SALE</h2>
             <h3>Up to 50%</h3>
@@ -92,10 +66,14 @@
         <hr>
         <footer>
             <div class="subscription">
-                <h4>Don't miss our offers and product launches</h4r>
-                <p>Subscribe to our newsletter </p>
+                <p>
+                    Don't miss our offers and product launches</p>
+               <p>
+                    Subscribe to our newsletter
+               </p>
+                       
                 <form action="send" method="get">
-                    <input type="email" placeholder="E-mail adress" required>
+                    <input type="email" placeholder="E-mail address" required>
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
@@ -145,6 +123,6 @@
                 </a>
             </div>
         </footer> 
-        </div>
+        
     </body>
 </html>

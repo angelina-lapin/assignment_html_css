@@ -10,7 +10,6 @@ a:hover{
 .blocks{
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
     gap: 10px;
 }
 

@@ -8,20 +8,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-api.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="./js/script.js" defer></script>
-
+        <link rel="stylesheet" href="css/style.css">    
+        <script type="module" src="/js/script.mjs"></script>
     </head>
+    
     <body>
         
         <header>         
             <nav> 
                 <ul>
-                    <li><a href="index.html"><img src="images/RainyDays_Logo.png" width="113" height="68" alt="RainyDays Logo"></a></li>
+                    <li><a href="index.html"><img src="images/RainyDays_Logo.png" id="logo" alt="RainyDays Logo"></a></li>
                     <li><a href="list.html">Men</a></li>
                     <li><a href="list.html">Women</a></li>
                     <li><a href="#">Search</a></li>
@@ -33,13 +29,24 @@
             </nav>
         </header>
     <main>
-        <div class="bestsellers">
-            <div class="col">
-                <h1>Bestsellers for men</h1>
-            </div>
-            <div class="col">
-                <h1>Bestsellers for women</h1>   
-            </div>
+        <div class="filters">
+            <select id="genderFilter">
+                <option value="all">All Genders</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <select id="categoryFilter">
+                <option value="all">All Category</option>
+                <option value="favorite">Favorite</option>
+                <option value="onSale">On Sale</option>
+            </select>
+            <button id="filterButton">Filter</button>
+
+            
+        </div>
+
+        <div class="list_of_items">
+
         </div>
 
             <div class="sale-container">
@@ -48,7 +55,7 @@
                 <button class="sale-button">Go to Sale</button>
             </div>
 
-        <div class="container">
+        <div class="text_container">
             <div class="column1">
                     <p>
                     Made from high-quality waterproof fabric, our jackets boast a reliable 
@@ -76,30 +83,7 @@
             </div>
         </div>
             
-        <div class="might-like-images">
-            <h1>You might also like</h1>
-            <div class="image-group">
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/blue_coat.webp" alt="blue coat"></a>
-                        <p>Blue coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/black_long.webp" alt="blue coat"></a>
-                    <p>Black coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/green_coat.jpg" alt="green coat"></a>
-                    <p>Green coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/darkblue_coat.jpg" alt="darkblue coat"></a>
-                    <p>Dark blue coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/stripe_coat.jpg" alt="stripe coat"></a>
-                    <p>Stripe coat</p>
-                </div>
-            </div>
+        
    
         </div>
             

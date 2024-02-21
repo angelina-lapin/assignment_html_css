@@ -3,12 +3,17 @@ body {
     background-color: #F8F4EF;
     font-family: Karma, serif;
     font-size: 1rem;  
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 
 /* Navigation bar*/
+
+#logo{
+    width: 113px; 
+    height: 68px;
+}
 
 nav {
     display: flex;
@@ -45,50 +50,32 @@ nav svg {
 
 /* Main */
 
-.bestsellers {
-display: flex;
-justify-content: space-between;
-margin-top: 3em;
-margin-bottom: 3em;
-gap: 3em;
-} 
-
-
-
-.col h1{
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.col{
-    width: 48%;
-    text-align: center;
-}
-
-.col{
+.list_of_items{
     display: flex;
     flex-wrap: wrap;
-    float: left;
-    width: 50%;
-    padding: 10px;
+    flex-direction: row;
+    gap: 5px;
 }
 
-.image-group{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 1em 1em 1em 0;
-    gap: 1em;
-}
 
-.image-item{
-    width: 100%;
+
+img{
+    width: 328px;
+    height: 328px;
+}
     
+.product-card h3{
+    font-size: 0,3em;
 }
 
-.image-item img{
-    width: 100%;
-    height: auto;
+.add-to-cart{
+    background-color: #F2F2F2;
+    color: #012340;
+    border: 3px solid #A69A5D;
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 
@@ -99,7 +86,6 @@ gap: 3em;
     align-items: center;
     padding: 20px;
     margin-right: 10px;
-    width: 100%;
     border-radius: 9px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,7 +101,7 @@ h2 {
 }
 
 h3{
-    font-size: 4rem;
+    font-size: 1rem;
     margin: 0;
     font-weight: bold;
     color: #000;
@@ -131,7 +117,7 @@ h3{
    
 }
 
-.container {
+.text_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -206,12 +192,9 @@ footer{
 
 .subscription{
     padding: 10px;
+    color: #0A3641;
 }
 
-.subscription{
-    color: #0A3641;
-    
-}
 
 .subscription h4{
     text-align: center;
@@ -318,17 +301,6 @@ a{
     }
 }
 
-@media screen and (max-width: 500px) {
-
-    body{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    nav ul{
-        gap: 1em;
-    }
-}
 
 @media screen and (max-width: 500px) {
 
