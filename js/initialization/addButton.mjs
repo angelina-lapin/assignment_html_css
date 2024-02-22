@@ -1,4 +1,4 @@
-import { addToCart } from "./utility/addToCart.mjs";
+import { addToCart } from "../utility/addToCart.mjs";
 
 function addBuyButton(product, productItem) {
   const buyButton = document.createElement('button');

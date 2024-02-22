@@ -1,98 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>        
-        <title>Home page</title>
+        <title>Cart</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Waterproof jackets for men and women" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">    
-        <script type="module" src="/js/script.mjs"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cart_style.css">
+        <script type="module" src="/js/checkout.mjs"></script>
     </head>
-    
     <body>
-        
-        <header>         
-            <nav> 
-                <ul>
-                    <li><a href="index.html"><img src="images/RainyDays_Logo.png" id="logo" alt="RainyDays Logo"></a></li>
-                    <li><a href="list.html">Men</a></li>
-                    <li><a href="list.html">Women</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="cart.html"><svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.78094 24.6373C8.11762 24.6373 6.77184 26.0005 6.77184 27.6667C6.77184 29.3329 8.11762 30.6961 9.78094 30.6961C11.4443 30.6961 12.8052 29.3329 12.8052 27.6667C12.8052 26.0005 11.4443 24.6373 9.78094 24.6373ZM0.708252 0.401978V3.43139H3.73248L9.1761 14.928L7.13474 18.639C6.8928 19.0632 6.75671 19.563 6.75671 20.0932C6.75671 21.7593 8.11762 23.1226 9.78094 23.1226H27.9263V20.0932H10.416C10.2043 20.0932 10.038 19.9265 10.038 19.7145L10.0834 19.5327L11.4443 17.0637H22.7095C23.8436 17.0637 24.8416 16.4427 25.3557 15.5036L30.7691 5.67315C30.8901 5.4611 30.9506 5.2036 30.9506 4.9461C30.9506 4.11301 30.2701 3.43139 29.4384 3.43139H7.07426L5.65287 0.401978H0.708252ZM24.9021 24.6373C23.2388 24.6373 21.893 26.0005 21.893 27.6667C21.893 29.3329 23.2388 30.6961 24.9021 30.6961C26.5654 30.6961 27.9263 29.3329 27.9263 27.6667C27.9263 26.0005 26.5654 24.6373 24.9021 24.6373Z" fill="#012340"/>
-                    </svg></a></li>
-                </ul>
-            </nav>
-        </header>
+       
+            <header>         
+                <nav> 
+                    <ul>
+                        <li><a href="index.html"><img src="images/RainyDays_Logo.png" id="logo" alt="RainyDays Logo"></a></li>
+                        <li><a href="list.html">Men</a></li>
+                        <li><a href="list.html">Women</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html"><svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78094 24.6373C8.11762 24.6373 6.77184 26.0005 6.77184 27.6667C6.77184 29.3329 8.11762 30.6961 9.78094 30.6961C11.4443 30.6961 12.8052 29.3329 12.8052 27.6667C12.8052 26.0005 11.4443 24.6373 9.78094 24.6373ZM0.708252 0.401978V3.43139H3.73248L9.1761 14.928L7.13474 18.639C6.8928 19.0632 6.75671 19.563 6.75671 20.0932C6.75671 21.7593 8.11762 23.1226 9.78094 23.1226H27.9263V20.0932H10.416C10.2043 20.0932 10.038 19.9265 10.038 19.7145L10.0834 19.5327L11.4443 17.0637H22.7095C23.8436 17.0637 24.8416 16.4427 25.3557 15.5036L30.7691 5.67315C30.8901 5.4611 30.9506 5.2036 30.9506 4.9461C30.9506 4.11301 30.2701 3.43139 29.4384 3.43139H7.07426L5.65287 0.401978H0.708252ZM24.9021 24.6373C23.2388 24.6373 21.893 26.0005 21.893 27.6667C21.893 29.3329 23.2388 30.6961 24.9021 30.6961C26.5654 30.6961 27.9263 29.3329 27.9263 27.6667C27.9263 26.0005 26.5654 24.6373 24.9021 24.6373Z" fill="#012340"/>
+                        </svg></a></li>
+                    </ul>
+                </nav>
+            </header>
     <main>
+        <div id="checkout-container">
 
-        <div class="loader" style="display: none;"></div>
-
-        <div class="filters">
-            <select id="genderFilter">
-                <option value="all">All Genders</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-            <select id="categoryFilter">
-                <option value="all">All Category</option>
-                <option value="favorite">Favorite</option>
-                <option value="onSale">On Sale</option>
-            </select>
-            <button id="filterButton">Filter</button>
-
-            
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name">Name and Last Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="card-info">Card Information:</label>
+                <input type="text" id="card-info" name="cardInfo" placeholder="1234 5678 9101 1121" required>
+            </div>
+            <button id="payButton" type="submit">Pay</button>
+        </form>
         </div>
 
-        <div class="list_of_items">
-
-        </div>
-
-            <div class="sale-container">
-                <h2 id="sale">SALE</h2>
-                <h3>Up to 50%</h3>
-                <button class="sale-button">Go to Sale</button>
-            </div>
-
-        <div class="text_container">
-            <div class="column1">
-                    <p>
-                    Made from high-quality waterproof fabric, our jackets boast a reliable 
-                    and breathable construction that effectively repels moisture while allowing 
-                    proper airflow. 
-                    </p>
-            </div>
-            <div class="column2">
-                
-                <p>
-                    Equipped with multiple pockets, including spacious hand pockets and 
-                    a secure chest pocket, this jacket offers ample storage space for your 
-                    essentials. 
-                </p>
-    
-            </div>
-            <div class="column3">
-                <p>
-                    Crafted with durability and style in mind, our jackets offer superior 
-                    protection against rain, wind, and snow, ensuring you stay dry and comfortable 
-                    throughout your outdoor adventures.
-                </p>
-                
-                
-            </div>
-        </div>
-            
-        
-   
-        </div>
-            
+<!-- Custom Alert Modal -->
+<div id="customAlertModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="alertMessage">Your order is being processed.</p>
+      <button id="continueButton">Continue</button>
+    </div>
+  </div>
+  
 
     </main>
-        <hr>
+        
+    <hr>
     <footer>
         <div class="subscription">
             <p>
@@ -152,7 +119,6 @@
             </a>
         </div>
     </footer> 
-        
-        
-    </body>
+    
+</body>
 </html>

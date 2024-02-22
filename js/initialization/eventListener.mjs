@@ -26,8 +26,7 @@ function fetchProductDetails(productId) {
       .catch(error => console.error('Error fetching product details:', error));
 }
 
-displayProductDetails();
-addBuyButton();
+
 
 
 export { initializeProductDetails };

@@ -50,6 +50,22 @@ nav svg {
 
 /* Main */
 
+.loader {
+    border: 16px solid #F2F2F2;
+    border-top: 16px solid #A69A5D;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
 .list_of_items{
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +79,11 @@ img{
     width: 328px;
     height: 328px;
 }
+
+#vector-done{
+    width: 50px;
+    height: 50px;
+}
     
 .product-card h3{
     font-size: 0,3em;
@@ -73,6 +94,7 @@ img{
     color: #012340;
     border: 3px solid #A69A5D;
     border-radius: 9px;
+    margin: 10px;
     padding: 10px 20px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -95,10 +117,15 @@ img{
 
 
 h2 {
-    font-size: 5rem;
+    font-size: 1.5rem;
     margin: 0;
     color: #000;
 }
+
+#sale{
+    font-size: 5rem;
+    margin: 0;
+    color: #000;}
 
 h3{
     font-size: 1rem;

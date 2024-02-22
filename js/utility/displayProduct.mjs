@@ -29,7 +29,7 @@ function displayProductDetails(product) {
       productItem.appendChild(productPrice);
      
       container.appendChild(productItem);
-    addBuyButton(product, productItem);
+    
       
     if (product.sizes && product.sizes.length > 0) {
       const sizeLabel = document.createElement('label');
@@ -49,12 +49,15 @@ function displayProductDetails(product) {
     
       productItem.appendChild(sizeLabel);
       productItem.appendChild(sizeSelector);
+      addBuyButton(product, productItem);
+
+
     }
     
      
 }
 
-addBuyButton();
+
 
 export{displayProductDetails};
 

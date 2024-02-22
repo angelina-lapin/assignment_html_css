@@ -9,8 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cart_style.css">
-        <script src="/js/jack.js"></script>
-        <!-- <script src="/js/buttons.js"></script> -->
+        <script type="module" src="/js/cart.mjs"></script>
     </head>
     <body>
        
@@ -29,35 +28,11 @@
                 </nav>
             </header>
     <main>
-        <div class="cart-items-container"></div>
-        <!-- <div class="might-like-images">
-            <h1>You might also like</h1>
-            <div class="image-group">
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/blue_coat.webp" alt="blue coat"></a>
-                        <p>Blue coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/black_long.webp"alt="blue coat"></a>
-                    <p>Black coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/green_coat.jpg"alt="green coat"></a>
-                    <p>Green coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/darkblue_coat.jpg"alt="darkblue coat"></a>
-                    <p>Dark blue coat</p>
-                </div>
-                <div class="image-item">
-                    <a href="jack.html"><img src ="images/stripe_coat.jpg"alt="stripe coat"></a>
-                    <p>Stripe coat</p>
-                </div>
-            </div>
-   
-        </div> -->
+        <div id="cart-container">
+        </div>
+        
         <div class="sale-container">
-            <h2>SALE</h2>
+            <h2 id="sale">SALE</h2>
             <h3>Up to 50%</h3>
             <button class="sale-button">Go to Sale</button>
         </div>

@@ -2,11 +2,24 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchProducts();
 });
 
+function showLoader() {
+  document.querySelector('.loader').style.display = 'block';
+}
+
+function hideLoader() {
+  document.querySelector('.loader').style.display = 'none';
+}
+
+
 function fetchProducts() {
+  showLoader()
   fetch('https://api.noroff.dev/api/v1/rainy-days')
       .then(response => response.json())
       .then(data => displayProducts(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Error fetching data:', error))
+      .finally(() => {
+        hideLoader();
+});
 }
 
 document.getElementById('filterButton').addEventListener('click', () => {
@@ -16,6 +29,7 @@ document.getElementById('filterButton').addEventListener('click', () => {
 });
 
 function fetchAndApplyFilters(gender, category) {
+  showLoader()
   fetch('https://api.noroff.dev/api/v1/rainy-days')
       .then(response => {
           if (!response.ok) {
@@ -34,7 +48,10 @@ function fetchAndApplyFilters(gender, category) {
       })
       .catch(error => {
           console.error('Error fetching or filtering products:', error);
-      });
+      })
+      .finally(() => {
+        hideLoader();
+});
 }
 
 function displayProducts(products) {
@@ -56,7 +73,7 @@ function displayProducts(products) {
     productTitle.textContent = product.title;
 
     const productPrice = document.createElement('p');
-    productPrice.textContent = `${product.price} $`; // Adjust formatting as necessary
+    productPrice.textContent = `${product.price} kr`; // Adjust formatting as necessary
 
     productLink.appendChild(productImage);
     productItem.appendChild(productLink);

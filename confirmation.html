@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/contact_info.css">
         <link rel="stylesheet" href="css/cart_style.css">
+        <script type="module" src="/js/confirmation.mjs"></script>
         
     </head>
     <body>
@@ -17,7 +18,7 @@
     <header>
         <nav> 
             <ul>
-                <li><a href="index.html"><img src="images/RainyDays_Logo.png" width="113" height="68" alt="RainyDays Logo"></a></li>
+                <li><a href="index.html"><img src="images/RainyDays_Logo.png" id="logo" alt="RainyDays Logo"></a></li>
                 <li><a href="list.html">Men</a></li>
                 <li><a href="list.html">Women</a></li>
                 <li><a href="#">Search</a></li>
@@ -31,53 +32,21 @@
         <main>
             <div class="container-cont">
                     <div class="left-col">
-                        <img src="images/done.png" alt="vector_done">
+                        <img src="images/done.png" id="vector-done" alt="vector_done">
                             <h1>Thank you! Your order is placed.</h1> 
                             <a href="index.html">Back to shopping</a>                         
                     </div>
                 
-            <div class="right-col">
-                    <p id="details">Details</p>
-                    <img src="images/orange.webp" alt="coat photo">
-                    <p class="order">Men's lite waterproof jacket</p>
-                    <p><strong>Size S</strong></p>
-                    <p>Kristian Ollu</p>
-                    <p>kristianollu@gmail.com</p>
-                    <p>Thunes vei 2, 0274 Oslo, Norway</p>
-                    <p>Home delivery</p>
+            <div class="confirmation-details">
+                   
             </div>
             </div>
             <div class="sale-container">
-                <h2>SALE</h2>
+                <h2 id="sale">SALE</h2>
                 <h3>Up to 50%</h3>
                 <button class="sale-button">Go to Sale</button>
             </div>
-            <div class="might-like-images">
-                <h1>You might also like</h1>
-                <div class="image-group">
-                    <div class="image-item">
-                        <a href="jack.html"><img src ="images/blue_coat.webp" alt="blue coat"></a>
-                            <p>Blue coat</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src ="images/black_long.webp"alt="blue coat"></a>
-                        <p>Black coat</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src ="images/green_coat.jpg"alt="green coat"></a>
-                        <p>Green coat</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src ="images/darkblue_coat.jpg"alt="darkblue coat"></a>
-                        <p>Dark blue coat</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="jack.html"><img src ="images/stripe_coat.jpg"alt="stripe coat"></a>
-                        <p>Stripe coat</p>
-                    </div>
-                </div>
-       
-            </div>
+        
         </main>
         
         <hr>
