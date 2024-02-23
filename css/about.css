@@ -1,96 +1,86 @@
-.home{
-    margin-top: 5rem;
-    
+.home {
+  margin-top: 5rem;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
-
-.mp img{
-   
-    width: 100%;
-    height: auto;
+.mp img {
+  width: 100%;
+  height: auto;
 }
 
-#slogan{
-    
-    top: 100px;
+#slogan {
+  top: 100px;
 }
 
-#slogan{
-    
-    color: #06272F;
-    font-size: 2rem;
-    font-style: solid;
+#slogan {
+  color: #06272f;
+  font-size: 2rem;
+  font-style: solid;
 }
 
-.about{
-    
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 0;
-   gap: 10rem;
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  gap: 10rem;
 }
 
-.left-col{
-    width: 50%;
-    height: auto;
-    
+.left-col {
+  width: 50%;
+  height: auto;
 }
 
-.right-col{
-    gap: 5px;
-    margin-top: 20px;
+.right-col {
+  gap: 5px;
+  margin-top: 20px;
 }
 
-.right-col{
-    width: 30%;
-    height: auto;
+.right-col {
+  width: 30%;
+  height: auto;
 }
 
-.right-col img{
-    width: 100%;
+.right-col img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-    .about{
-        gap: 3rem;
-    }
+  .about {
+    gap: 3rem;
+  }
 
-    .left-col{
-        width: 60%;
-        height: auto;
-        
-    }
+  .left-col {
+    width: 60%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    body{
-        font-size: 0.7rem;
-    }
+  body {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    body{
-        font-size: 0.5rem;
-    }
+  body {
+    font-size: 0.5rem;
+  }
 
-    .about{
-        gap: 2rem;
-    }
+  .about {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .left-col {
+    width: 100%;
+    height: auto;
+  }
 
-    .left-col{
-        width: 100%;
-        height: auto;
-        
-    }
-
-    .right-col img{
-        display: none;
-    }
+  .right-col img {
+    display: none;
+  }
 }
