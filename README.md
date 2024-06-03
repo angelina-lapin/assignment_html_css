@@ -1,6 +1,6 @@
 # RainyDays - Online store of waterproof jackets for men and women 
 
-![image]("https://github.com/angelina-lapin/assignment_html_css/assets/149388296/222ad98d-58ee-416b-a666-04529ceb5667")
+![image]("https://angelina.lapin.io/githubPreviews/rainydays%20.png")
 
 Welcome to the project of developing a website for an online raincoat store. In this project, I used HTML and CSS to create the structure and styles of the web page, as well as JavaScript to add interactivity. In this document, you will find information about the project goals, its functionality, and instructions for installation and running.
 
